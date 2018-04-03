@@ -1,6 +1,8 @@
-let pomodoro = new Vue({
+new Vue({
   el: '#app',
-  data: {
-    
+  data () {
+    return {
+      workTime: 25
+    };
   }
 });
