@@ -73,6 +73,13 @@ new Vue({
     pauseTimer: function() {
       clearInterval(this.interval);
     },
+    resetTimer: function() {
+      console.log('reset');
+      clearInterval(this.interval);
+      this.sessionType = 'init';
+      this.workTime = 25;
+      this.breakTime = 5;
+    },
     formatTime: function(v) {
       return (v < 10) ? '0' + v : v;
     }
